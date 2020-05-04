@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ohui LG Vina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/logo__mypham.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <!-- Nhúng font awesome 5 Pro -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Reset css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Nhúng thư viện tự tạo grid system -->
+  <link rel="stylesheet" href="css/grid.css">
+  <!-- slick.css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="grid wide">
+        <nav class="header__navbar hide-on-mobile-tablet">
+          <ul class="header__list">
+            <li class="header__list-item header__list-link--hover"><a href="#!"
+                class="header__list-link header__list-link--border">Vào cửa hàng trên ứng dụng MyOhui</a>
+              <div class="header__qr">
+                <a href="#!" class="header__qr-link"><img src="./images/qr-code2.png" alt="" class="header__qr-image">
+                  <div class="qr__apps"><img src="./images/google-store.png" alt="" class="header__qr-image-item"><img
+                      src="./images/app-store.png" alt="" class="header__qr-image-item"></div>
+                </a>
+              </div>
+            </li>
+            <li class="header__list-item"><a href="tel:0965866851"
+                class="header__list-link header__list-link--border"><i
+                  class="fas fa-phone-alt header__list-icon--margin"></i> 0965866851</a></li>
+            <li class="header__list-item"><a href="mailto:ohuiha.com@gmail.com" target="_blank_"
+                class="header__list-link"><i class="fas fa-envelope header__list-icon--margin"></i>
+                Ohuiha.com@gmail.com</a></li>
+          </ul>
+          <ul class="header__list">
+            <li class="header__list-item header__list-link--notify"><a href="#!" class="header__list-link "><i
+                  class="fal fa-bell header__list-icon header__list-icon--margin"></i>Thông Báo</a>
+              <div class="header__notify header__notify-height header__notify--cart">
+                <div class="header__notify-item"><img src="./images/notify.png" alt="" class="header__notify-image">
+                  <p class="header__notify-text">Đăng nhập để xem Thông báo</p>
+                </div>
+                <div class="header__notify-form"><a href="#!"
+                    class="header__notify-btn header__notify-btn--register">Đăng ký</a><a href="#!"
+                    class="header__notify-btn header__notify-btn--login">Đăng nhập</a></div>
+              </div>
+            </li>
+            <li class="header__list-item header__list-item--margin-right"><a href="#!" class="header__list-link"><i
+                  class="fal fa-question-circle header__list-icon header__list-icon--margin"></i>Trợ Giúp</a></li>
+            <li class="header__list-item"><a href="#!"
+                class="header__list-link header__list-link--strong header__list-link--border">Đăng Ký</a></li>
+            <li class="header__list-item  "><a href="#!"
+                class="header__list-link header__list-link--strong header__list-item--margin">Đăng Nhập</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__middle">
+      <div class="grid wide">
+        <div class="menu__siderbar">
+          <label class="header__icon-bars" for="nav__input"><i class="fal fa-bars"></i></label>
+          <label class="header__icon-bars header__icon-bars--search" for="nav__search"><i
+              class="fal fa-search"></i></label>
+          <input type="checkbox" hidden="" id="nav__input" class="nav__input">
+          <label for="nav__input" class="navbar__overlay"></label>
+          <nav class="navbar__mobile-wrapper">
+            <div class="navbar__mobile-list"><a href="#!" class="navbar__mobile-link">Tất cả sản phẩm</a></div>
+            <ul class="navbar__mobile-list">
+              <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link js-navbar">Ohui <i
+                    class="fal fa-angle-right"></i></a>
+                <ul class="navbar__mobile-list navbar__mobile-list--hide">
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Thefirst Tái Sinh </a>
+                  </li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Dưỡng Trắng</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Prime Advancer</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Chống Lão Hóa</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Dưỡng Ẩm</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Make Up</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Ohui Chống nắng</a></li>
+                </ul>
+              </li>
+              <li class="navbar__mobile-item "><a href="#!" class="navbar__mobile-link js-navbar">Whoo <i
+                    class="fal fa-angle-right"></i></a>
+                <ul class="navbar__mobile-list navbar__mobile-list--hide">
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Bichup</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Dưỡng Ẩm</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Dưỡng Trắng Trị Nám</a>
+                  </li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Make Up</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Tái Sinh</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Chống Nắng</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Spa</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Chống Lão Hóa</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Whoo Hoàn Lưu cao</a></li>
+                </ul>
+              </li>
+              <li class="navbar__mobile-item "><a href="#!" class="navbar__mobile-link js-navbar">Su:m37 <i
+                    class="fal fa-angle-right"></i></a>
+                <ul class="navbar__mobile-list navbar__mobile-list--hide">
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Su:m37 Tái Sinh</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Sm:m37 Chống Lão Hóa </a>
+                  </li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Sm:m37 Dưỡng Trắng </a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Su:m37 cấp ẩm water full </a>
+                  </li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Su:m37 Làm Sạch </a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Su:m37 Chống Nắng Sun
+                      Away</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Su:m37 Make Up</a></li>
+                </ul>
+              </li>
+              <li class="navbar__mobile-item "><a href="#!" class="navbar__mobile-link js-navbar">Set Mini <i
+                    class="fal fa-angle-right"></i></a>
+                <ul class="navbar__mobile-list navbar__mobile-list--hide">
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Set Ohui Mini</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Set Ohui Mini</a></li>
+                  <li class="navbar__mobile-item"><a href="#!" class="navbar__mobile-link">Set Su:m37 Mini</a></li>
+                </ul>
+              </li>
+              <li class="navbar__mobile-item "><a href="#!" class="navbar__mobile-link js-navbar">Thực phẩm chức
+                  năng</a></li>
+              <li class="navbar__mobile-item "><a href="#!" class="navbar__mobile-link js-navbar">Dịch vụ</a></li>
+            </ul>
+          </nav>
+          <div class="header__logo">
+            <a class="logo__container" href="/"><img src="images/logo__mypham.png" alt="logo"></a>
+          </div>
+          <input type="checkbox" hidden="" id="nav__search" class="nav__search">
+          <div class="form__search">
+            <form method="POST">
+              <input type="text" class="form__search-text" name="keyword" placeholder="Tìm kiếm..." value="">
+              <button type="submit" class="form__search-btn"><i class="fal fa-search"></i></button>
+              <div class="form__search-history"><span class="form__search-history-label">Lịch sử tìm kiếm</span>
+                <div class="form__search-history-list">
+                  <div class="form__search-history-item">
+                    <a href="#!" class="form__search-history-link">Ohui</a>
+                    <a href="#!" class="form__search-history-link">Whoo</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="hot__words hide-on-mobile-tablet">
+              <div class="hot__words-list">
+                <div class="hot__words-item"><a href="#!" class="hot__words-link">Sữa rửa mặt</a><a href="#!"
+                    class="hot__words-link">Set dưỡng ẩm</a><a href="#!" class="hot__words-link">Bộ dưỡng ẩm</a><a
+                    href="#!" class="hot__words-link">Kem đặc trị</a><a href="#!" class="hot__words-link">Xịt khoáng
+                    nước</a><a href="#!" class="hot__words-link">Set tinh chất</a><a href="#!"
+                    class="hot__words-link">Son dưỡng môi</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="shopping__cart">
+            <div class="shopping__cart-icon shopping__cart-icon--hover"><i class="fal fa-shopping-cart"></i><span
+                class="number__cart">3</span></div>
+            <div class="header__notify header__notify--cart">
+              <div class="header__notify-item">
+                <div class="header__notify-wrap">
+                  <div class="header__notify-title">Sản phẩm đã thêm</div>
+                  <div class="header__notify-wrap-list">
+                    <div class="header__notify-inner">
+                      <div class="header__notify-image-product"><img
+                          src="https://img.abaha.vn/photos/resized/320x/83-1586336630-myphamohui-lgvina.png" alt="">
+                      </div>
+                      <div class="header__notify-content">
+                        <div class="header__notify-content-name"> Set sữa rửa mặt Ohui Prime Gel Cleanser</div>
+                        <div class="header__notify-content-price">1.035.000đ<span
+                            class="header__notify-content-multipy">x</span><span
+                            class="header__notify-content-quantity">1</span></div>
+                      </div>
+                      <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+                    </div>
+                    <div class="header__notify-inner">
+                      <div class="header__notify-image-product"><img
+                          src="https://img.abaha.vn/photos/resized/320x/83-1586781803-myphamohui-lgvina.png" alt="">
+                      </div>
+                      <div class="header__notify-content">
+                        <div class="header__notify-content-name">Set kem mắt tái sinh Ohui The First Geniture Eye Cream
+                          Edition Grand Blue</div>
+                        <div class="header__notify-content-price">4.140.000đ<span
+                            class="header__notify-content-multipy">x</span><span
+                            class="header__notify-content-quantity">1</span></div>
+                      </div>
+                      <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+                    </div>
+                    <div class="header__notify-inner">
+                      <div class="header__notify-image-product"><img
+                          src="https://img.abaha.vn/photos/resized/320x/83-1586785742-myphamohui-lgvina.png" alt="">
+                      </div>
+                      <div class="header__notify-content">
+                        <div class="header__notify-content-name">Set dưỡng ẩm whoo vàng Gong Jin Hyang 336ml</div>
+                        <div class="header__notify-content-price">3.150.000đ<span
+                            class="header__notify-content-multipy">x</span><span
+                            class="header__notify-content-quantity">1</span></div>
+                      </div>
+                      <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__notify-cart__total"><span>Tổng tiền :</span><span>8.325.000đ</span><a
+                  class="header__notify-wrap-btn" href="/cart">Xem giỏ hàng</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="header__sort-bar">
+      <li class="header__sort-item header__sort-item--active"><a href="#!" class="header__sort-link">Liên quan</a></li>
+      <li class="header__sort-item"><a href="#!" class="header__sort-link">Mới nhất</a></li>
+      <li class="header__sort-item"><a href="#!" class="header__sort-link">Bán chạy</a></li>
+      <li class="header__sort-item"><a href="#!" class="header__sort-link">Giá</a></li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <div id="product" class="product">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2 hide-on-mobile-tablet">
+            <div class="category">
+              <div class="category__title">
+                <h4 class="category__title-name">Danh mục</h4>
+              </div>
+              <div class="category__all-product"><a href="#!"
+                  class="category__list-link category__list-link--active">Tất cả sản phẩm</a></div>
+              <ul class="category__list">
+                <li class="category__list-item category__list-item--has-children"><a href="#!"
+                    class="category__list-link">Ohui <i class="fal fa-chevron-right"></i></a>
+                  <ul class="category__list category__list--chilren">
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Thefirst Tái Sinh</a>
+                    </li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Dưỡng Trắng</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Prime Advancer</a>
+                    </li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Dưỡng Ẩm</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Chống Lão Hóa</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Make Up</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Ohui Chống Nắng</a></li>
+                  </ul>
+                </li>
+                <li class="category__list-item category__list-item--has-children"><a href="#!"
+                    class="category__list-link">Whoo <i class="fal fa-chevron-right"></i></a>
+                  <ul class="category__list">
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Bichup</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Dưỡng Ẩm</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Dưỡng Trắng Trị
+                        Nám</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Make Up</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Tái Sinh</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Chống Nắng</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Spa</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Chống Lão Hóa</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Whoo Hoàn Lưu Cao</a></li>
+                  </ul>
+                </li>
+                <li class="category__list-item category__list-item--has-children"><a href="#!"
+                    class="category__list-link">Su:m37 <i class="fal fa-chevron-right"></i></a>
+                  <ul class="category__list">
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Su:m37 Tái Sinh</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Sm:m37 Chống Lão Hóa </a>
+                    </li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Sm:m37 Dưỡng Trắng </a>
+                    </li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Su:m37 cấp ẩm water full
+                      </a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Su:m37 Làm Sạch </a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Su:m37 Chống Nắng Sun
+                        Away</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Su:m37 Make Up</a></li>
+                  </ul>
+                </li>
+                <li class="category__list-item category__list-item--has-children"><a href="#!"
+                    class="category__list-link">Set mini <i class="fal fa-chevron-right"></i></a>
+                  <ul class="category__list">
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Set Ohui Mini</a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Set Whoo Mini </a></li>
+                    <li class="category__list-item"><a href="#!" class="category__list-link">Set Su:m37 Mini </a></li>
+                  </ul>
+                </li>
+                <li class="category__list-item"><a href="#!" class="category__list-link">Thực phẩm chức năng</a></li>
+                <li class="category__list-item"><a href="#!" class="category__list-link">Dịch vụ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-10">
+            <div class="home__filter hide-on-mobile-tablet"><span class="home__filter-label">Sắp xếp theo</span>
+              <div class="home__filter-btn">
+                <button class="home__filter-btn-item active">Phổ biến</button>
+                <button class="home__filter-btn-item">Mới nhất</button>
+                <button class="home__filter-btn-item">Bán chạy</button>
+                <div class="select__orderby select__orderby--min-width">
+                  <div class="select__item select__item--height"><span
+                      class="select__price select__price--size">Giá</span><span><i
+                        class="fal fa-chevron-down select__item--icon"></i></span></div>
+                  <div class="select__item-dropdown">
+                    <div class="select__item-dropdown-status"><a href="#!" class="select__item-link">Giá: Thấp đến
+                        Cao</a>
+                      <svg class="tickid-svg-icon tickid-svg-icon--active " enable-background="new 0 0 12 12"
+                        viewBox="0 0 12 12" x="0" y="0">
+                        <g>
+                          <path
+                            d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="select__item-dropdown-status"><a href="#!" class="select__item-link">Giá: Cao đến
+                        Thấp</a>
+                      <svg class="tickid-svg-icon" enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0">
+                        <g>
+                          <path
+                            d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home__filter-pagination"><span
+                  class="label__pagination label__pagination--active">1/</span><span class="label__pagination">14</span>
+                <div class="filter-btn"><a href="#!" class="filter-btn__item filter-btn__item--border"><i
+                      class="far fa-angle-left"></i></a><a href="#!" class="filter-btn__item"><i
+                      class="far fa-angle-right"></i></a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1586781803-myphamohui-lgvina.png"
+                      alt="Set kem mắt tái sinh Ohui The First Geniture Eye Cream Edition Grand Blue"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set kem mắt tái sinh Ohui The First Geniture Eye Cream Edition Grand Blue
+                    </div>
+                    <div class="product__price"><del class="product__price-del">4.600.000đ</del><ins
+                        class="product__price-new">4.140.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1586773435-myphamohui-lgvina.png"
+                      alt="Set sữa rửa mặt Ohui Thefirst tái sinh"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set sữa rửa mặt Ohui Thefirst tái sinh</div>
+                    <div class="product__price"><del class="product__price-del">1.750.000đ</del><ins
+                        class="product__price-new">1.575.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1580888419-myphamohui-lgvina.png"
+                      alt="Bộ kem đặc trị vùng mắt Ohui Age Recovery Wrinkle Cut Serum."></div>
+                  <div class="product__content">
+                    <div class="product__name">Bộ kem đặc trị vùng mắt Ohui Age Recovery Wrinkle Cut Serum.</div>
+                    <div class="product__price"><del class="product__price-del">2.300.000đ</del><ins
+                        class="product__price-new">2.070.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1586336630-myphamohui-lgvina.png"
+                      alt=" Set sữa rửa mặt  Ohui Prime Gel Cleanser"></div>
+                  <div class="product__content">
+                    <div class="product__name"> Set sữa rửa mặt Ohui Prime Gel Cleanser</div>
+                    <div class="product__price"><del class="product__price-del">1.150.000đ</del><ins
+                        class="product__price-new">1.035.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">20%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1586785742-myphamohui-lgvina.png"
+                      alt="Set dưỡng ẩm whoo vàng  Gong Jin Hyang 336ml"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set dưỡng ẩm whoo vàng Gong Jin Hyang 336ml</div>
+                    <div class="product__price"><del class="product__price-del">3.450.000đ</del><ins
+                        class="product__price-new">3.150.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Whoo</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/73-1573634717-myohui.png"
+                      alt="Son lì Su:m37 Losec Suma Elixir Golden Lipstick  tặng kèm bảng son Su:m 37 "></div>
+                  <div class="product__content">
+                    <div class="product__name">Son lì Su:m37 Losec Suma Elixir Golden Lipstick tặng kèm bảng son Su:m 37
+                    </div>
+                    <div class="product__price"><del class="product__price-del">950.000đ</del><ins
+                        class="product__price-new">855.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Su:m37</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1580817749-myphamohui-lgvina.png"
+                      alt="Cushion trang điểm dưỡng trắng Whoo Radiant White Moisture Cushion Foundation "></div>
+                  <div class="product__content">
+                    <div class="product__name">Cushion trang điểm dưỡng trắng Whoo Radiant White Moisture Cushion
+                      Foundation </div>
+                    <div class="product__price"><del class="product__price-del">1.500.000đ</del><ins
+                        class="product__price-new">1.350.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Su:m37</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1580794419-myphamohui-lgvina.png"
+                      alt="Set tái sinh Ohui Thefirst mini 7 món"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set tái sinh Ohui Thefirst mini 7 món</div>
+                    <div class="product__price"><del class="product__price-del">2.500.000đ</del><ins
+                        class="product__price-new">850.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1580711393-myphamohui-lgvina.png"
+                      alt="Xịt khoáng nước thần sum:37 Secret Esence mist 30ml"></div>
+                  <div class="product__content">
+                    <div class="product__name">Xịt khoáng nước thần sum:37 Secret Esence mist 30ml</div>
+                    <div class="product__price"><del class="product__price-del">500.000đ</del><ins
+                        class="product__price-new">350.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Su:m37</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">30%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1586777049-myphamohui-lgvina.png"
+                      alt="Set whoo tái sinh Whoo Ultimate Rejuvenating 3 món"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set whoo tái sinh Whoo Ultimate Rejuvenating 3 món</div>
+                    <div class="product__price"><del class="product__price-del">1.200.000đ</del><ins
+                        class="product__price-new">500.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Whoo</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">59%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1576146597-myphamohui-lgvina.png"
+                      alt="Set tinh chất  Ohui xanh Prime Advancer Ampoule Serum phiên bản 90ml"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set tinh chất Ohui xanh Prime Advancer Ampoule Serum phiên bản 90ml</div>
+                    <div class="product__price"><del class="product__price-del">3.300.000đ</del><ins
+                        class="product__price-new">2.970.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+              <div class="col l-3 m-4 c-6">
+                <a class="product__item" href="/">
+                  <div class="product__image"><img
+                      src="https://img.abaha.vn/photos/resized/320x/83-1575812225-myphamohui-lgvina.png"
+                      alt="Set Ohui chống lão hóa Age recovery"></div>
+                  <div class="product__content">
+                    <div class="product__name">Set Ohui chống lão hóa Age recovery</div>
+                    <div class="product__price"><del class="product__price-del">3.000.000đ</del><ins
+                        class="product__price-new">2.700.000đ</ins></div>
+                    <div class="product__heart"><span><i class="fal fa-heart"></i></span>
+                      <div class="product__header-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                          class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    </div>
+                    <div class="product__nation"><span>Ohui</span><span>Hàn Quốc</span></div>
+                  </div>
+                  <div class="btn__cart-inner">
+                    <button class="js-addToCart btn__cart-badge"><i class="far fa-shopping-cart"></i></button>
+                  </div>
+                  <div class="product__sale"><span class="product__sale-percent">10%</span><span
+                      class="product__sale-reduction">Giảm</span></div>
+                </a>
+              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a href="" class="pagination__link"><i class="fal fa-chevron-left"></i></a>
+                </li>
+                <li class="pagination__item"><a href="" class="pagination__link active">1</a></li>
+                <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+                <li class="pagination__item"><a href="" class="pagination__link">...</a></li>
+                <li class="pagination__item"><a href="" class="pagination__link">14</a></li>
+                <li class="pagination__item"><a href="" class="pagination__link"><i
+                      class="fal fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2-4 m-4 c-6 ">
+            <div class="footer__item">
+              <div class="footer__menu-title">Chăm sóc khách hàng</div>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Trung tâm trợ giúp</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Phản hồi khách hàng</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Hướng dẫn mua hàng</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Trả hàng &amp; Hoàn tiền</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Thanh toán</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6 ">
+            <div class="footer__item">
+              <div class="footer__menu-title">Về chúng tôi</div>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Giới thiệu về shopee Việt Nam</a>
+                </li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Tuyển dụng</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Điều khoản shop</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Kênh Người bán</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Flash Sales</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6 ">
+            <div class="footer__item">
+              <div class="footer__menu-title">Danh Mục</div>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Ohui</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Whoo</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Su:m37</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Set Mini</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link">Thực phẩm chức năng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6 ">
+            <div class="footer__item">
+              <div class="footer__menu-title">Theo dõi chúng tôi trên</div>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link"><i class="fab fa-facebook"></i>
+                    Facebook</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link"><i class="fab fa-instagram "></i>
+                    Instagram</a></li>
+                <li class="footer__menu-item"><a href="#!" class="footer__menu-link"><i class="fab fa-twitter"></i>
+                    Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6 hide-on-mobile">
+            <div class="footer__item">
+              <div class="footer__menu-title">Vào cửa hàng trên ứng dụng</div>
+              <div class="footer__store">
+                <a href="#!" class="footer__store-link"><img src="./images/footer_qr.png" alt=""
+                    class="footer__store-link-qr">
+                  <div class="footer__store-link-item"><img src="./images/footer_app_store.png" alt=""
+                      class="footer__store-link-app"><img src="./images/footer-gg-play.png" alt=""
+                      class="footer__store-link-app"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__policy">
+        <div class="footer__policy-list">
+          <div class="footer__policy-item"><a href="#!" class="footer__policy-link">Chính sách bảo mật</a></div>
+          <div class="footer__policy-item"><a href="#!" class="footer__policy-link">Quy chế hoạt động</a></div>
+          <div class="footer__policy-item"><a href="#!" class="footer__policy-link">Chính sách vận chuyển</a></div>
+          <div class="footer__policy-item"><a href="#!" class="footer__policy-link">Chính sách trả hàng và hoàn tiền</a>
+          </div>
+        </div>
+        <div class="footer__image-item">
+          <a href="#!" class="footer__image-link">
+            <div class="footer__image"></div>
+          </a>
+        </div>
+        <div class="footer__copy-right"><i class="fal fa-copyright"></i> 2020 Mỹ Phẩm Ohui - LG Vina - 63 Lê Văn Lương,
+          Trung Hòa, Cầu Giấy, Hà Nội</div>
+      </div>
+    </div>
+  </footer>
+  <a id="back-to-top" href="#!" class="back-to-top">
+    <i class="fal fa-chevron-up back-to-top__icon" aria-hidden="true"></i>
+  </a>
+  <div class="Notifycation js-noti">
+    <div class="Notifycation__content js-Notifycation__content">Sản phẩm đã được thêm vào giỏ hàng</div>
+  </div>
+  <div class="shopping__cart--scroll">
+    <div class="shopping__cart shopping__cart--fixed">
+      <div class="shopping__cart-icon shopping__cart-icon--hover"><i class="fal fa-shopping-cart"></i><span
+          class="number__cart">3</span></div>
+      <div class="header__notify header__notify--cart">
+        <div class="header__notify-item">
+          <div class="header__notify-wrap">
+            <div class="header__notify-title">Sản phẩm đã thêm</div>
+            <div class="header__notify-wrap-list">
+              <div class="header__notify-inner">
+                <div class="header__notify-image-product"><img
+                    src="https://img.abaha.vn/photos/resized/320x/83-1586336630-myphamohui-lgvina.png" alt="">
+                </div>
+                <div class="header__notify-content">
+                  <div class="header__notify-content-name"> Set sữa rửa mặt Ohui Prime Gel Cleanser</div>
+                  <div class="header__notify-content-price">1.035.000đ<span
+                      class="header__notify-content-multipy">x</span><span
+                      class="header__notify-content-quantity">1</span></div>
+                </div>
+                <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+              </div>
+              <div class="header__notify-inner">
+                <div class="header__notify-image-product"><img
+                    src="https://img.abaha.vn/photos/resized/320x/83-1586781803-myphamohui-lgvina.png" alt="">
+                </div>
+                <div class="header__notify-content">
+                  <div class="header__notify-content-name">Set kem mắt tái sinh Ohui The First Geniture Eye Cream
+                    Edition Grand Blue</div>
+                  <div class="header__notify-content-price">4.140.000đ<span
+                      class="header__notify-content-multipy">x</span><span
+                      class="header__notify-content-quantity">1</span></div>
+                </div>
+                <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+              </div>
+              <div class="header__notify-inner">
+                <div class="header__notify-image-product"><img
+                    src="https://img.abaha.vn/photos/resized/320x/83-1586785742-myphamohui-lgvina.png" alt="">
+                </div>
+                <div class="header__notify-content">
+                  <div class="header__notify-content-name">Set dưỡng ẩm whoo vàng Gong Jin Hyang 336ml</div>
+                  <div class="header__notify-content-price">3.150.000đ<span
+                      class="header__notify-content-multipy">x</span><span
+                      class="header__notify-content-quantity">1</span></div>
+                </div>
+                <button class="btn__del-cart header__notify-content-btn">Xóa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__notify-cart__total"><span>Tổng tiền :</span><span>8.325.000đ</span><a
+            class="header__notify-wrap-btn" href="/cart">Xem giỏ hàng</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
