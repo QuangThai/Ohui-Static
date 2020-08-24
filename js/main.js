@@ -64,7 +64,7 @@ $(document).ready(function () {
       $('.light-box-page').remove();
     });
   });
-  
+
   // scroll Top
   var scrollTop = $(".back-to-top");
 
